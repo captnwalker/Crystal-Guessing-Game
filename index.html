@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Crystals Collector Game</title>
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <title>Crystals Collector Game</title>
+  
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Link to Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Roboto" rel="stylesheet">
 
 <!-- jQuery uncompressed CDN -->
 <script
@@ -21,15 +19,66 @@ src="https://code.jquery.com/jquery-3.2.1.js"
 integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
 crossorigin="anonymous"></script>
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
 </head>
 <body>
 
+  <div class="container">
+    <div class="wrapper">
+  
+  <header>Can You Beat The Crystals?</header>
+  
+    <h1>Number to Guess: <span id="numTarget"></span></h1>
+  
+    <!-- 1 image replicated 4 times -->
+    <div id="crystals">
+    </div>
 
-
-
+    <!-- Slide Up Instruction Sheet -->
+        <p class="p1">
+            <ul>
+              <header>Instructions:</header>  
+              <li>Click "PLAY" at bottom of page to start music.</li>
+              <li>Click "SHOW/HIDE Instructions" once you have read them.</li>
+              <li>There will be four crystals displayed as buttons on the page.</li>
+              <li>The player will be shown a random number at the start of the game.</li>
+              <li>When the player clicks on a crystal, it will add a specific amount of points to the player's total score.</li>
+              <li>The player wins if their total score matches the random number from the beginning of the game.</li>
+              <li>The player loses if their score goes above the random number.</li>            
+          </ul>
+        </p>
+      
+    <!-- Scoreboard -->
+  <div>
+    <button id="btnSlideTog">Show/Hide Instructions</button>
+          
+      <h1>New Score: <span id="score"></span></h1>
+    
+      <h1 class="winner"><span></span></h1>
+      
+      <h1 class="loser"><span></span></h1>
+    
+      <h1><span id="win"></span></h1>
+    
+      <h1><span id="loss"></span></h1>
+  </div>     
+  
+    <!-- Audio -->
+      <div class="audio">
+        <h2>How 'bout Some Tunes?</h2>
+          <div id="length">Duration:</div>
+          <!-- <div id="source">Source:</div> -->
+          <div id="status" style="font-weight:bolder; color:red">Status: Loading</div>
+          <hr>
+        <h3>Mission Control</h3>
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="restart">Restart</button>
+        <hr>
+        <div id="currentTime">0</div>
+      </div>
+    <!-- End Audio -->
+  </div>
+</div>
 
 <script type="text/javascript" src="assets/js/game.js"></script>
 </body>

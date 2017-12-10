@@ -1,0 +1,53 @@
+body {
+    text-align:center;    
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/wallpaper2.jpg);
+    color: #d8640c;
+    background-repeat: no-repeat;
+}
+
+.container {     
+    display: flex;
+    justify-content: center;      
+}
+
+.wrapper {
+    padding-top: 25px;      
+}
+
+.crystal-image {
+    width: 200px;
+    height: 200px;
+}
+
+header {
+    font-size: 3em;
+    font-family: 'Audiowide', cursive;        
+}
+
+h1, h2 {
+    color: #d8640c;
+}
+
+.winner {
+    font-family: 'Audiowide', cursive;
+    color: yellow;
+    font-size: 3.5em;
+}
+
+.loser {
+    font-family: 'Audiowide', cursive;
+    color: red;
+    font-size: 3.5em;
+}
+
+.instruct {
+    width: 600px;        
+}
+
+ul {
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-justify: left;
+    background-color: wheat;
+}
