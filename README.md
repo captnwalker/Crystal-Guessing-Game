@@ -6,7 +6,7 @@
 
 ### Known Issues
 
-* Primary random number generator (rng) working, secondary rng for crystals not working yet. Crystals have static values of 10, 5, 3, 7 respectively.
+* Primary random number generator (rng) is working, however secondary rng for crystals is not working yet. Crystals have been assigned static values of 10, 5, 3, 7 respectively for testing puposes.
 * Game reset not working yet; wins/losses are not persistant.
 * No other known issues.
 

@@ -1,8 +1,9 @@
-$(document).ready(function() {
-    $('#btnSlideTog').click(function(){
-        $('ul').slideToggle();
+    $(document).ready(function() {
+    //Toggle Instructions Button
+        $("#btnSlideTog").click(function(){
+            $("ul").slideToggle();
+        });
     });
-});
     
     //VARIABLES
     var ranNum;
@@ -13,20 +14,20 @@ $(document).ready(function() {
     var numberOptions = [10, 5, 3, 7];
     var score = score;
     
-    //RANDOM NUMBER GENERATOR	
-    ranNum = Math.floor(Math.random() * 70 ) + 32; 
+    //RANDOM NUMBER GENERATOR <120	
+    ranNum = Math.floor(Math.random() * 82 ) + 32; 
         $("#numTarget").html(ranNum);
         
     //CRYSTAL RANDOM NUMBER GENERATOR - Not working properly yet.    
-        // for(var i = 0; i < 4; i++){    
-        // 	var random = Math.floor(Math.random() * 12) + 1;    
-        // 	var crystal = $("<div>");
-        // 		crystal.attr({
-        // 			"class": 'crystal-image',
-        // 			"data-random": random
-        // 	});    
-        //  var resetAndStart = function () {    
-        // $(".imageCrystals").empty();
+    // for(var i = 0; i < 4; i++){    
+    // 	var random = Math.floor(Math.random() * 12) + 1;    
+    // 	var imageCrystal = $("<div>");
+    // 		imageCrystal.attr({
+    // 			"class": "crystal-image",
+    // 			"data-random": random,
+    // 	});    
+    //  var resetAndStart = function () {    
+    // $(".imageCrystal").empty();
     
     // For loop to create crystals for each numberOption.
     for (var i = 0; i < numberOptions.length; i++) {    
@@ -63,14 +64,14 @@ $(document).ready(function() {
             loss++;
         $("#loss").html("Loss:   " + loss);       
         $(".loser").html("You Lose!!  Go Home!!");        
-        }
+    }
     });
     
-    // Audio Panel
-    var audioElement = document.createElement('audio');
+    //Audio Panel
+    var audioElement = document.createElement("audio");
     //Audio source file
-    audioElement.setAttribute('src', 'assets/snd/DeeZee06TheSpaceInside.mp3');
-        audioElement.addEventListener('ended', function() {
+    audioElement.setAttribute("src", "assets/snd/DeeZee06TheSpaceInside.mp3");
+        audioElement.addEventListener("ended", function() {
         this.play();
     }, false);
     //Various Readouts, duration, etc.
@@ -84,16 +85,16 @@ $(document).ready(function() {
         $("#currentTime").text("Current second:" + audioElement.currentTime);
     });
     //Audio Control Button Elements; play, pause, restart.
-    $('#play').click(function() {
+    $("#play").click(function() {
         audioElement.play();
         $("#status").text("Status: Playing");
     });
     
-    $('#pause').click(function() {
+    $("#pause").click(function() {
         audioElement.pause();
         $("#status").text("Status: Paused");
     });
     
-    $('#restart').click(function() {
+    $("#restart").click(function() {
         audioElement.currentTime = 0;
     });
