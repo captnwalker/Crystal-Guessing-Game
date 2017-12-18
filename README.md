@@ -2,7 +2,12 @@
 
 ## Crystals Collector Game - jQuery
 
-### Submitted by Steve Walker
+### Link to Live Site
+[Crystals Collector Game Live Site](https://captnwalker.github.io/Crystal-Guessing-Game/ "Crystals Collector Game")
+
+### Screenshot of this Project
+
+![GifTastic](https://raw.github.com/captnwalker/Crystal-Guessing-Game/master/screenshot/crystal-game.png "Crystals Collector Guessing Game")
 
 ### Known Issues
 
@@ -11,3 +16,5 @@
 * No other known issues.
 
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+### Authored by Steve Walker
